@@ -3,23 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		A0C423B725A92E250080B492 /* ResponderTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C423B625A92E250080B492 /* ResponderTestApp.swift */; };
-		A0C423B925A92E250080B492 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C423B825A92E250080B492 /* ContentView.swift */; };
+		A0C423B925A92E250080B492 /* ViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C423B825A92E250080B492 /* ViewOne.swift */; };
 		A0C423BB25A92E260080B492 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C423BA25A92E260080B492 /* Assets.xcassets */; };
 		A0C423BE25A92E260080B492 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C423BD25A92E260080B492 /* Preview Assets.xcassets */; };
+		A0C423C825A92E4D0080B492 /* ResponderChain in Frameworks */ = {isa = PBXBuildFile; productRef = A0C423C725A92E4D0080B492 /* ResponderChain */; };
+		A0C423CB25A92E840080B492 /* ViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C423CA25A92E840080B492 /* ViewTwo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A0C423B325A92E250080B492 /* ResponderTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResponderTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0C423B625A92E250080B492 /* ResponderTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponderTestApp.swift; sourceTree = "<group>"; };
-		A0C423B825A92E250080B492 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A0C423B825A92E250080B492 /* ViewOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOne.swift; sourceTree = "<group>"; };
 		A0C423BA25A92E260080B492 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0C423BD25A92E260080B492 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A0C423BF25A92E260080B492 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0C423CA25A92E840080B492 /* ViewTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTwo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0C423C825A92E4D0080B492 /* ResponderChain in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				A0C423B625A92E250080B492 /* ResponderTestApp.swift */,
-				A0C423B825A92E250080B492 /* ContentView.swift */,
+				A0C423B825A92E250080B492 /* ViewOne.swift */,
+				A0C423CA25A92E840080B492 /* ViewTwo.swift */,
 				A0C423BA25A92E260080B492 /* Assets.xcassets */,
 				A0C423BF25A92E260080B492 /* Info.plist */,
 				A0C423BC25A92E260080B492 /* Preview Content */,
@@ -85,6 +90,9 @@
 			dependencies = (
 			);
 			name = ResponderTest;
+			packageProductDependencies = (
+				A0C423C725A92E4D0080B492 /* ResponderChain */,
+			);
 			productName = ResponderTest;
 			productReference = A0C423B325A92E250080B492 /* ResponderTest.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +120,9 @@
 				Base,
 			);
 			mainGroup = A0C423AA25A92E250080B492;
+			packageReferences = (
+				A0C423C625A92E4D0080B492 /* XCRemoteSwiftPackageReference "ResponderChain" */,
+			);
 			productRefGroup = A0C423B425A92E250080B492 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0C423B925A92E250080B492 /* ContentView.swift in Sources */,
+				A0C423B925A92E250080B492 /* ViewOne.swift in Sources */,
+				A0C423CB25A92E840080B492 /* ViewTwo.swift in Sources */,
 				A0C423B725A92E250080B492 /* ResponderTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +340,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A0C423C625A92E4D0080B492 /* XCRemoteSwiftPackageReference "ResponderChain" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Amzd/ResponderChain";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A0C423C725A92E4D0080B492 /* ResponderChain */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A0C423C625A92E4D0080B492 /* XCRemoteSwiftPackageReference "ResponderChain" */;
+			productName = ResponderChain;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A0C423AB25A92E250080B492 /* Project object */;
 }

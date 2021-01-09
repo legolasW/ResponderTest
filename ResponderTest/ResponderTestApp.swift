@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import ResponderChain
 
 @main
 struct ResponderTestApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ViewOne()
+                .withResponderChainForCurrentWindow()
         }
     }
 }
